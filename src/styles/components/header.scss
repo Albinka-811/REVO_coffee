@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+
+  &-block {
+    &-logo {
+      width: 124px;
+      height: 40px;
+      margin: 76px 140px 0 188px;
+    }
+    &-title {
+      position: absolute;
+      font-family: $fontMont;
+      font-weight: 900;
+      font-size: $fontSizeXXL;
+      color: $primary;
+      margin: 392px 0 0 195px ;
+
+      &__color {
+        color: $white;
+        background-color: $accent;
+      }
+    }
+  }
+
+  &-slide {
+    //position: relative;
+    &-photo {
+      width: 690px;
+      height: 768px;
+    }
+    &-btn {
+      border: none;
+      height: 54px;
+      width: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+
+      &__icon {}
+    }
+  }
+
+  &-menu {
+    background-color: $primary ;
+    &-cart {
+      margin: 74px 180px 118px 54px;
+      &__shop {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    &-list {
+      font-family: $fontNunito;
+      font-weight: 600;
+      font-size: $fontSizeS;
+      color: $lightGray;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 0 54px;
+      &-item {
+        padding-top: 30px;
+
+        &__link {
+          font-family: $fontNunito;
+          font-weight: 300;
+          font-size: $fontSizeS;
+          color: $lightGray;
+        }
+      }
+    }
+  }
+}
