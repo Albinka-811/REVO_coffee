@@ -1,0 +1,128 @@
+.giftset {
+  position: relative;
+  margin-top: 120px;
+  z-index: 1;
+
+  &-about {
+    text-align: center;
+    padding-top: 85px;
+
+    &__title {
+      font-family: $fontMont;
+      font-weight: 900;
+      font-size: $fontSizeXL;
+      color: $primary;
+      margin: 10px 0 0;
+    }
+
+    &__text {
+      font-family: $fontNunito;
+      font-weight: 600;
+      font-size: $fontSizeM;
+      color: $primary;
+      margin: 0;
+    }
+  }
+
+  &-depiction {
+    display: flex;
+    width: 1138px;
+    margin: 66px 0 0 130px;
+    position: relative;
+
+    &-photo {
+      height: 460px;
+      width: 490px;
+      position: absolute;
+    }
+
+    &-content {
+      background-color: $white;
+      height: 460px;
+      width: 794px;
+      margin-left: 22%;
+      padding: 64px 66px 0 304px;
+      border-right: 1px solid $lightGray;
+
+      &-info {
+
+        &__price {
+          font-family: $fontNunito;
+          font-weight: 600;
+          font-size: $fontSizeM;
+          color: $accent;
+          padding-bottom: 10px;
+        }
+
+        &__name {
+          font-family: $fontNunito;
+          font-weight: 700;
+          font-size: $fontSizeL;
+          color: $grey;
+          margin: 0 0 12px;
+        }
+
+        &__text {
+          font-family: $fontNunito;
+          font-weight: 300;
+          font-size: $fontSizeS;
+          color: $darkGray;
+        }
+
+        &-sort {
+          display: flex;
+          margin: 24px 0 46px;
+
+          &__icons {
+            margin-right: 18px;
+          }
+
+          &__about {
+            font-family: $fontNunito;
+            font-weight: 300;
+            font-size: $fontSizeS;
+            color: $primary;
+            margin-right: 94px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      &-submit {
+
+        &__btn {
+          border: none;
+          border-radius: 19px;
+          background-color: $accent;
+          padding: 9px 34px;
+          margin-right: 125px;
+          font-family: $fontNunito;
+          font-weight: 600;
+          font-size: $fontSizeS;
+          text-align: center;
+          color: $white;
+        }
+
+        &__detail {
+          font-family: $fontNunito;
+          font-weight: 600;
+          font-size: $fontSizeS;
+          text-align: center;
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  &:before {
+    content: "";
+    background-color: $lightGray;
+    width: 1076px;
+    height: 802px;
+    position: absolute;
+    z-index: -1;
+  }
+}
