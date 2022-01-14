@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 128px;
+  font-family: $fontNunito;
+  font-size: $fontSizeS;
+  color: $primary;
+  background-color: $lightGray;
+  height: 60px;
+}
