@@ -1,0 +1,154 @@
+.combo {
+  position: relative;
+  margin-top: 126px;
+  z-index: 1;
+
+  &-about {
+    text-align: center;
+    padding-top: 88px;
+
+    &__title {
+      font-family: $fontMont;
+      font-weight: 900;
+      font-size: $fontSizeXL;
+      color: $primary;
+      margin: 10px 0 0;
+    }
+
+    &__text {
+      font-family: $fontNunito;
+      font-weight: 600;
+      font-size: $fontSizeM;
+      color: $primary;
+      margin: 0;
+    }
+  }
+
+  &-products {
+    display: flex;
+    flex: 0 0 100%;
+    position: absolute;
+    transition: transform 0.3s linear, opacity 0.3s linear;
+    opacity: 0.3;
+    transform: translateX(100%);
+
+    &.active {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    &-column {
+      display: flex;
+      flex-flow: column;
+      background-color: $white;
+      width: 360px;
+      height: 562px;
+      margin-right: 35px;
+
+      &-photo {
+        max-height: 300px;
+      }
+
+      &-content {
+        padding: 34px 42px 42px;
+
+        &-info {
+          margin-bottom: 32px;
+
+          &__newprice {
+            font-family: $fontNunito;
+            font-weight: 600;
+            font-size: $fontSizeM;
+            color: $accent;
+            padding-right: 15px;
+            padding-bottom: 10px;
+          }
+
+          &__price {
+            font-family: $fontNunito;
+            font-weight: 300;
+            font-size: 14px;
+            color: $primary;
+            text-decoration-line: line-through;
+            padding-bottom: 10px;
+          }
+
+          &__name {
+            font-family: $fontNunito;
+            font-weight: 700;
+            font-size: $fontSizeL;
+            color: $grey;
+            margin: 0 0 10px;
+          }
+
+          &__text {
+            font-family: $fontNunito;
+            font-weight: 300;
+            font-size: $fontSizeS;
+            color: $darkGray;
+          }
+        }
+
+        &-submit {
+
+          &__btn {
+            border: none;
+            border-radius: 19px;
+            background-color: $accent;
+            padding: 6px 17px;
+            margin-right: 29px;
+            font-family: $fontNunito;
+            font-weight: 600;
+            font-size: $fontSizeS;
+            text-align: center;
+            color: $white;
+          }
+
+          &__detail {
+            font-family: $fontNunito;
+            font-weight: 600;
+            font-size: $fontSizeS;
+            text-align: center;
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  &:before {
+    content: "";
+    background-color: $primary;
+    width: 326px;
+    height: 906px;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.combo-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  height: 562px;
+  margin: 64px 0 0 130px;
+
+  &-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    transition: 0.6s ease;
+    user-select: none;
+
+    &_arrow {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &-next {
+    right: 5%;
+  }
+}
