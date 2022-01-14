@@ -1,0 +1,144 @@
+.slider {
+  position: relative;
+  z-index: 1;
+
+  &-about {
+    text-align: center;
+    padding-top: 90px;
+
+    &__text {
+      font-family: $fontNunito;
+      font-weight: 600;
+      font-size: $fontSizeM;
+      color: $primary;
+      margin: 0;
+    }
+
+    &__title {
+      font-family: $fontMont;
+      font-weight: 900;
+      font-size: $fontSizeXL;
+      color: $primary;
+      margin: 10px 0 0;
+    }
+  }
+
+  &-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 29px;
+    grid-row-gap: 32px;
+    position: absolute;
+    transition: transform 0.3s linear, opacity 0.3s linear;
+    opacity: 0.3;
+    transform: translateX(calc(100% + 29px));
+
+    &.active {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    &-row {
+      display: flex;
+      align-items: center;
+      width: 560px;
+      height: 256px;
+      background-color: $white;
+
+      &-photo {
+        background-color: $lightGray;
+      }
+
+      &-content {
+        margin-left: 45px;
+
+        &-info {
+          margin-bottom: 24px;
+
+          &__price {
+            font-family: $fontNunito;
+            font-weight: 600;
+            font-size: $fontSizeM;
+            color: $accent;
+            padding-bottom: 8px;
+          }
+
+          &__name {
+            font-family: $fontNunito;
+            font-weight: 700;
+            font-size: $fontSizeL;
+            color: $grey;
+            margin: 0 0 24px;
+          }
+
+          &__text {
+            font-family: $fontNunito;
+            font-weight: 300;
+            font-size: $fontSizeS;
+            color: $darkGray;
+          }
+        }
+
+        &-submit {
+
+          &__btn {
+            border: none;
+            border-radius: 19px;
+            background-color: $accent;
+            padding: 6px 17px;
+            margin-right: 29px;
+            font-family: $fontNunito;
+            font-weight: 600;
+            font-size: $fontSizeS;
+            text-align: center;
+            color: $white;
+          }
+
+          &__detail {
+            font-family: $fontNunito;
+            font-weight: 600;
+            font-size: $fontSizeS;
+            text-align: center;
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  &:before {
+    content: "";
+    background-color: $primary;
+    width: 300px;
+    height: 894px;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  height: 544px;
+  margin: 72px 0 0 130px;
+
+  &-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    transition: 0.6s ease;
+    user-select: none;
+
+    &_arrow {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &-next {
+    right: 6%;
+  }
+}
+
