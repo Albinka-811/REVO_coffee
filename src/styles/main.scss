@@ -9,7 +9,7 @@
 html,
 body {
   margin: 0;
-  background-color: #F9FBFF;
+  background-color: $whiteGray;
 }
 
 .container {
@@ -17,6 +17,6 @@ body {
   margin: 0 auto;
 }
 
-button, ul{
-  cursor:pointer;
+button, ul {
+  cursor: pointer;
 }
