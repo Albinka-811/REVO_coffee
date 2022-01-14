@@ -1,0 +1,21 @@
+@import "variales.scss";
+@import "./components/header.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: $whiteGray;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+button, ul {
+  cursor: pointer;
+}
