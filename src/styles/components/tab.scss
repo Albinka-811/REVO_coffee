@@ -18,10 +18,19 @@
   background: $lightGray;
   mix-blend-mode: normal;
   opacity: 0.3;
+
+  &.active {
+    background-color: $white;
+    color: $primary;
+    opacity: 1;
+  }
 }
 
-.tablink:hover {
-  background-color: $white;
-  color: $primary;
-  opacity: 1;
+@media (pointer: fine) {
+  .tablink:hover {
+    background-color: $white;
+    color: $primary;
+    opacity: 1;
+  }
 }
+
