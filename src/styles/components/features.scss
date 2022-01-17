@@ -24,6 +24,7 @@
 
   &-cards {
     display: flex;
+    justify-content: space-between;
     width: 1104px;
     margin: 72px auto 0;
 
@@ -31,15 +32,10 @@
       display: block;
       text-align: center;
       width: 226px;
-      margin-right: 68px;
-
-      &:last-child {
-        margin-right: 0;
-      }
 
       &__img {
         width: 80px;
-        height: 81px;
+        height: 80px;
         margin-top: 20px;
       }
 
