@@ -38,7 +38,7 @@
       opacity: 1;
     }
 
-    &-row {
+    &-card {
       display: flex;
       align-items: center;
       width: 560px;
@@ -131,7 +131,7 @@
     transition: 0.6s ease;
     user-select: none;
 
-    &_arrow {
+    &__arrow {
       width: 48px;
       height: 48px;
     }
