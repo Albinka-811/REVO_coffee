@@ -9,4 +9,4 @@ aboutSlider.init({
 })
 
 const tabSelector = new TabSelector()
-tabSelector.init('#gift-tabs .tablink');
+tabSelector.init('#gift-tabs .tab-link');
