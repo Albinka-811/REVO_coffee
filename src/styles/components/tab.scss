@@ -3,25 +3,36 @@
   position: absolute;
   width: 88px;
   height: 460px;
+
+  &-link {
+    display: block;
+    padding: 60px 36px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    transition: 0.3s;
+    font-family: $fontMont;
+    font-size: $fontSizeXL;
+    background: $lightGray;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+
+    &.active {
+      background-color: $white;
+      color: $primary;
+      opacity: 1;
+    }
+
+    @media (pointer: fine) {
+      &:hover {
+        background-color: $white;
+        color: $primary;
+        opacity: 1;
+      }
+    }
+  }
 }
 
-.tablink {
-  display: block;
-  padding: 60px 36px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: center;
-  transition: 0.3s;
-  font-family: $fontMont;
-  font-size: $fontSizeXL;
-  background: $lightGray;
-  mix-blend-mode: normal;
-  opacity: 0.3;
-}
 
-.tablink:hover {
-  background-color: $white;
-  color: $primary;
-  opacity: 1;
-}
+
