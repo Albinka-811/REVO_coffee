@@ -8,5 +8,11 @@ aboutSlider.init({
     rightButtonSelector: '#nextSlideBtn',
 })
 
+const secondSlider = new AlyaSwiper()
+secondSlider.init({
+    slideSelector: '.combo-products',
+    rightButtonSelector: '#nextSlideBtnC',
+})
+
 const tabSelector = new TabSelector()
 tabSelector.init('#gift-tabs .tab-link');
