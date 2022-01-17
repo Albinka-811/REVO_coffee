@@ -1,4 +1,4 @@
-import { AlyaSwiper } from './albinaCarousel'
+import { AlyaSwiper } from './src/plugins/albinaCarousel'
 
 const aboutSlider = new AlyaSwiper()
 aboutSlider.init({

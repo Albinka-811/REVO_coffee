@@ -1,5 +1,3 @@
-console.log('Slider module')
-
 function AlyaSwiper () {
     let currentSlideIndex = 0
     let slides
