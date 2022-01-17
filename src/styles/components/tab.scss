@@ -23,14 +23,16 @@
       color: $primary;
       opacity: 1;
     }
+
+    @media (pointer: fine) {
+      &:hover {
+        background-color: $white;
+        color: $primary;
+        opacity: 1;
+      }
+    }
   }
 }
 
-@media (pointer: fine) {
-  .tablink:hover {
-    background-color: $white;
-    color: $primary;
-    opacity: 1;
-  }
-}
+
 
