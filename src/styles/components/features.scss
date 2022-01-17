@@ -1,0 +1,59 @@
+.features {
+  margin-bottom: 128px;
+
+  &-about {
+    text-align: center;
+    margin-top: 90px;
+
+    &__text {
+      font-family: $fontNunito;
+      font-weight: 600;
+      font-size: $fontSizeM;
+      color: $primary;
+      margin: 0;
+    }
+
+    &__title {
+      font-family: $fontMont;
+      font-weight: 900;
+      font-size: $fontSizeXL;
+      color: $primary;
+      margin: 10px 0 0;
+    }
+  }
+
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 1104px;
+    margin: 72px auto 0;
+
+    &-row {
+      display: block;
+      text-align: center;
+      width: 226px;
+
+      &__img {
+        width: 80px;
+        height: 80px;
+        margin-top: 20px;
+      }
+
+      &__name {
+        font-family: $fontNunito;
+        font-weight: 700;
+        font-size: $fontSizeL;
+        color: $grey;
+        margin: 40px 0 12px;
+      }
+
+      &__text {
+        font-family: $fontNunito;
+        font-weight: 300;
+        font-size: $fontSizeS;
+        color: $primary;
+      }
+    }
+  }
+}
+
